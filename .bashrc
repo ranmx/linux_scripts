@@ -67,7 +67,7 @@ LIGHT_GREEN="\[\033[1;32m\]"
      BRANCH=''
    fi
    # Set the bash prompt variable.
-   PS1="${debian_chroot:+($debian_chroot)}${PYTHON_VIRTUALENV}${YELLOW}\w ${BLUE}${BRANCH}${PROMPT_SYMBOL}"
+   PS1="${debian_chroot:+($debian_chroot)}${PYTHON_VIRTUALENV}${YELLOW}\u@\h {YELLOW}\w ${BLUE}${BRANCH}${PROMPT_SYMBOL}"
  }
  # Tell bash to execute this function just before displaying its prompt.
  PROMPT_COMMAND=set_bash_prompt
